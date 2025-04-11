@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@500&family=Montserrat:wght@300;400&family=Roboto+Slab&family=Roboto:wght@100;300&display=swap');
+.sign-out p{
+  position: absolute;
+  left: 105px;
+  bottom: 5px;
+  font-family: "oswald";
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+}
+.btn
+{
+
+  position: absolute;
+  bottom: 23px;
+  left:100px;
+  height: 30px;
+  width:  200px;
+  font-family:"oswald";
+  transition: all ease 0.8s;
+  border: none;
+  outline:none;
+ 
+  color: rgb(0, 0, 0);
+
+ border-radius: 5px 5px 5px 5px;
+
+ background-color: Transparent;
+ background-repeat:no-repeat;
+ border: none;
+ cursor:pointer;
+ overflow: hidden;
+
+}
+
+.btn:hover
+{
+  scale:1.1;
+}

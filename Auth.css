@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@500&family=Montserrat:wght@300;400&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab&family=Roboto:wght@100;300&display=swap');
+.wrap{
+    display: flex;
+    width: 100%;
+    height: 100%;
+   justify-content: space-between;
+   font-family: "Oswald", sans-serif;
+}
+  
+.left
+{
+   
+ height: 100%;
+ width: 1000px;
+ background-image: url('https://img.freepik.com/free-photo/dark-surface-with-chat-bubble_23-2148734131.jpg?t=st=1722024758~exp=1722028358~hmac=28823bdb9c1e8b1e80b66f42a074f2c74bfa06183f674249f166c1ea3a1f930d&w=740');
+ background-size: cover;
+ background-position: center;
+ scale: 0.8;
+ border-radius: 7px 7px 7px 7px;
+
+
+}
+.bounce {
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+    height: 200px;
+    left: calc(50% - 50px);
+    position: absolute;
+    right: calc(50% - 50px);
+    width: 200px;
+   top:350px;
+   left: 700px;
+   z-index: 1;
+   animation: blob 2s linear infinite alternate;
+  }
+
+  @keyframes blob {
+    50%{transform: translate(60px,-40px);
+   }
+    
+  }
+  
+.right
+{
+ 
+    margin-left: 80px;
+    width: 100%;
+    display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+.right .im
+{
+    margin-top: 200px;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    font-family: "Oswald", sans-serif;
+    font-size: 90px;
+
+  
+    
+}
+.right .im p
+{
+font-size: 60px;
+}
+.rightl
+{
+    margin-top: 50px;
+    margin-bottom: 350px;
+    
+}
+.rightl p
+{
+    font-size: 40px;
+    
+    font-weight: 400;
+}
+.rightl svg
+{
+
+   height: 20px;
+   width: 20px;
+   margin-bottom: -5px;
+   
+}
+.wrap .right button
+{
+color: rgb(254, 254, 254);
+background-color:#2a2929;
+border:none;
+padding: 8px 28px;
+font-size: 20px;
+box-shadow: 1px 1px 3px 0px rgb(0, 0, 0);
+
+position: relative;
+z-index: 1;
+transition: color 0.5s;
+font-family: "oswald";
+border-radius: 5px 5px 5px 5px;
+}
+.wrap .right button::before
+{
+ content: "";
+ background-color: rgb(255, 252, 252);
+ position: absolute;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ top: 0;
+ transform: scaleX(0);
+ transform-origin:left ;
+ transition: all ease 1s;
+ z-index: -1;
+}
+.wrap .right button:hover::before{
+ transform: scaleX(1);
+ 
+}
+.wrap .right button:hover
+{
+ color: black;
+
+}
+
+.wrap p
+{
+    font-family:"robotoslab" ;
+    font-size: 30px;
+}
+
+.rightl .btm{
+    display: flex;
+    background-color: rgb(57, 53, 46);
+}
+.rightl .fast
+{
+    position: absolute;
+    bottom: 25px;
+    font-size: 25px;
+    
+}
+
+
+.rightl .secure
+{
+position: absolute;
+bottom: 25px;
+margin-left: 300px;
+font-size: 25px;
+}
+.rightl .fb
+{
+    position: absolute;
+bottom: 25px;
+margin-left: 600px;
+font-size: 25px;
+}
+
+#right
+{
+  display: block;
+}
+
+.lbtm
+{
+color: rgb(255, 255, 255);
+background-color:#000000;
+border:none;
+padding: 8px 28px;
+font-size: 20px;
+box-shadow: 1px 1px 3px 0px rgb(0, 0, 0);
+position: relative;
+z-index: 1;
+transition: color 0.5s;
+font-family:"robotoslab";
+border-radius: 5px 5px 5px 5px;
+display: none;
+margin-top: 790px;
+margin-left: 200px;
+font-family: "Oswald";
+}
+.lbtm::before
+{
+ content: "";
+ background-color: rgb(255, 252, 252);
+ position: absolute;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ top: 0;
+ transform: scaleX(0);
+ transform-origin:left ;
+ transition: all ease 1s;
+ z-index: -1;
+}
+.lbtm:hover::before{
+ transform: scaleX(1);
+ 
+}
+.lbtm:hover
+{
+ color: black;
+
+}
+
+
+#lbtm{
+    display: block;
+}
+.left h1
+{
+    position: absolute;
+    top:-80px;
+    left: 170px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Oswald";
+    display: none;
+}
+
+@media (max-width:900px){
+  .right{
+   display: none;
+  }
+  .left{
+    width: 600px;
+    
+  }
+  .lbtm{
+    display: initial;
+    
+  }
+  .left h1
+{
+    display: initial;
+}
+}

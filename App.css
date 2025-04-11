@@ -1,0 +1,98 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@500&family=Montserrat:wght@300;400&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab&family=Roboto:wght@100;300&display=swap');
+
+.App {
+  display: flex;
+  
+  width: 100vw;
+  height: 100vh;
+  
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-header {
+  text-align: center;
+ font-size: 90px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(32, 31, 31);
+  width: 100%;
+
+  
+}
+
+.app-container {
+  margin-top: 0px;
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  margin-left: 100px;
+
+}
+
+.room label {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-family: "oswald";
+}
+
+.room input {
+  width: 400px;
+  height: 30px;
+  font-family: "oswald";
+  border-radius: 6px;
+  padding-left: 5px;
+  font-size: 20px;
+  text-align: center;
+  margin: 5px;
+}
+.room button {
+  width: 410px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  padding-left: 5px;
+  font-size: 20px;
+  text-align: center;
+  margin: 5px;
+ background-color: black;
+  color: white;
+  cursor: pointer;
+  font-family: "oswald";
+}
+
+.sign-out {
+  margin-top: 30px;
+}
+
+.room .pg2img
+{
+  height: 800px;
+  width: 800px;
+ position: absolute;
+  right: 0;
+ top:0;
+  background-image: url("https://as2.ftcdn.net/v2/jpg/05/17/78/13/1000_F_517781389_HPuXkZy01MEM6uxIoEp3NFEbP88eP7We.jpg");
+  background-size: cover;
+  background-position: center;
+  scale: 0.8;
+  border-radius: 7px 7px 7px 7px;
+
+
+}
+#pg2img
+{
+  display: block;
+}
+
+@media (max-width:900px){
+  .room .pg2img{
+   display: none;
+  }
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@500&family=Montserrat:wght@300;400&family=Roboto+Slab&family=Roboto:wght@100;300&display=swap');
+.wrapper
+{
+  position: absolute;
+  background-image: url("https://i.pinimg.com/564x/be/3c/55/be3c55a51e534e80169233165703dae8.jpg");
+  height: 100%;
+  right: 0%;
+  left: 0%;
+ 
+  background-size: cover;
+  background-position: center;
+ 
+
+}
+.chat-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   margin-left: 30px;
+    border-color: #000000;
+    height: max-content;
+    width: 900px;
+    
+    border-radius: 5px;
+    overflow: hidden;
+    
+    font-family: "oswald";
+  }
+  .header {
+    display: flex;
+   justify-content: center;
+    color: rgb(0, 0, 0);
+    width: 100%;
+   
+  }
+  .messages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 80%;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: "oswald";
+    font-size: 20px;
+    
+  }
+  
+  .message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    font-family: "oswald";
+    font-size: 20px;
+  }
+  
+ 
+  .user {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #232121;
+    font-family: "oswald";
+    font-size: 20px;
+  }
+  
+  .new-message-form {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    font-family: "oswald";
+    font-size: 20px;
+  }
+  
+  .new-message-input {
+    flex: 1;
+    
+    font-size: 20px;
+    background: transparent;
+    font-size: 16px;
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    font-family: "oswald";
+    margin-bottom: 20PX;
+  }
+  
+  .send-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: #000000;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  transition: all ease 0.8;
+  }
+
+  .send-button:hover {
+    scale: 1.1;
+  }
+
+  @media (max-width:900px){
+    .chat-app{
+      width: 500px;
+     
+    }
+  }
